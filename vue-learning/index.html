@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting started</title>
+
+    </head>
+    <body>
+        <div id="app">
+            <h2>{{msg}}</h2>
+            <h2>{{isCompleted}}</h2>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            new Vue({
+                el: "#app",
+                data: {
+                    msg: 'Hello world',
+                    isCompleted: true
+                }
+            });
+        </script>
+    </body>
+</html>
