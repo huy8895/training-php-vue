@@ -99,9 +99,6 @@ foreach ($list as $value) {
 ?>
 
 <?php
-
-
-
 echo '<br>'.'duyệt mảng 2 chiều'.'<br>';
 $data = [0 => 1, 1 => [3 => 4, 5 => 6]];
 foreach ($data as $key => $val) {
@@ -113,8 +110,6 @@ foreach ($data as $key => $val) {
     } else
         echo '---key: '.'is_not_array '.$key.'<br>';;
 }
-
-
 ?>
 
 <?php
@@ -158,6 +153,25 @@ do {
     $i++;
 } while ($i <= 10);
 ?>
+
+
+<?php
+echo '<br>' . '--------' . 'Bài 11: Hàm trong PHP.';
+function tinhTong($a, $b)
+{
+    return $a + $b;
+}
+
+function readName($name = 'world')
+{
+    echo 'hello' . $name;
+}
+
+readName();
+
+echo function_exists('readName')
+?>
+
 
 
 </body>
