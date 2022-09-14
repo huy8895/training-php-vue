@@ -100,7 +100,21 @@ foreach ($list as $value) {
 
 <?php
 
-echo 'br'
+
+
+echo '<br>'.'duyệt mảng 2 chiều'.'<br>';
+$data = [0 => 1, 1 => [3 => 4, 5 => 6]];
+foreach ($data as $key => $val) {
+    if (is_array($val)) {
+        echo '---key: '.'is_array '.$key.'<br>';
+        foreach ($val as $k => $v) {
+            echo 'key: '.$k .' - value: '.$v . "<br/>";
+        }
+    } else
+        echo '---key: '.'is_not_array '.$key.'<br>';;
+}
+
+
 ?>
 
 </body>
