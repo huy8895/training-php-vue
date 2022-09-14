@@ -1,2 +1,3 @@
 # Project exclude paths
 /vue-learning/node_modules/
+.idea
