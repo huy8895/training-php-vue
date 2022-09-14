@@ -136,5 +136,29 @@ foreach ($cars as $key => $value) {
 
 }
 ?>
+
+<?php
+
+echo '<br><br>'.'Bài 10: Vòng lặp while và do while trong PHP';
+$i = 0; // khởi tạo biến
+while ($i <= 10 /* điều kiện dừng*/) {
+    echo $i . "<br>"; // in ra số
+    $i++; //sau mỗi lần lặp biến $i tăng thêm 1 đơn vị
+}
+
+echo '<br>'.'--------'.'2, Vòng lặp do-while.';
+$i = 0;
+do {
+    $j = $i;
+    do {
+        echo "*";
+        $j++;
+    } while ($j <= 10);
+    echo "<br>";
+    $i++;
+} while ($i <= 10);
+?>
+
+
 </body>
 </html>
