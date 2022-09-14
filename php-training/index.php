@@ -77,8 +77,30 @@ print_r($array);
 
 <?php
 
-//Bài 9: Vòng lặp for và foreach trong PHP
+echo '<br><br>'.'Bài 9: Vòng lặp for và foreach trong PHP';
 
+$list = [1,2,3,4];
+
+for( $i = 0; $i <= 10; $i++) {
+    echo 'counting '. $i .' <br>';
+};
+
+echo '<br>'.'------> foreach // Lặp cả key lẫn value của mảng';
+foreach ($list as $key => $value) {
+    echo "<br>day la phan tu co key = $key"." and value = $value";
+}
+
+echo '<br>'."// Lặp value của mảng_________________ <br/>";
+// Lặp value của mảng
+foreach ($list as $value) {
+    echo "Giá trị phần tử = $value <br/>";
+}
+
+?>
+
+<?php
+
+echo 'br'
 ?>
 
 </body>
