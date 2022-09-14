@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
+<head>
+    <title>my php</title>
+
+</head>
 <body>
 
 <h1>My first PHP page</h1>
@@ -31,6 +35,49 @@ echo ($php . $_php);
 //2, Hằng.
 define('NAME', 'trinh van huy');
 
+echo (NAME)
+
+//Bài 5: Các Kiểu dữ liệu trong PHP
+
+?>
+
+<?php
+echo '<br>';
+
+echo 'bai 5';
+$a = 1234; // hệ số thập phân
+$a = -123; // số âm
+$a = 0123; // Bát phân
+$a = 0x1A; // Hệ thập lục
+$a = 0b11111111; // Hệ nhị phân
+
+$float = 5.586; //Kiểu số thực.
+$is_Male = true; //Kiểu boolean.
+
+$string = 'toidicode.com';
+$string = "toidicode1.com";
+echo NAME;
+echo $a;
+
+$string = 'new';
+
+$array = array();
+$array = [];
+$array = array('giá trị 1', 3, 3.14);
+$haha = print_r($array);
+echo '<br>';
+echo $haha;
+echo '<br>';
+echo $array[0];
+$array['key'] = 'value';
+
+echo '<br>';
+print_r($array);
+?>
+
+<?php
+
+//Bài 9: Vòng lặp for và foreach trong PHP
 
 ?>
 
